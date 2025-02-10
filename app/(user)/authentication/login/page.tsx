@@ -1,6 +1,5 @@
 // import LogIn from "LogIn";
-import { auth, signIn, signOut } from "@/auth";
-import { redirect } from "next/dist/server/api-utils";
+import {  signIn } from "@/auth";
 import { faGoogle, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

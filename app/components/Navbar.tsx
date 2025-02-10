@@ -1,5 +1,4 @@
-import { auth, signIn, signOut } from "@/auth";
-import { redirect } from "next/dist/server/api-utils";
+import { auth, signOut } from "@/auth";
 import Link from "next/link";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -42,16 +41,6 @@ const Navbar = async () =>{
                                 <span className="text-black font-[550]">Log In</span>
                             </button>
                        </Link> 
-                        {/* <form action={async () => {
-                        "use server";
-
-                        await signIn('github');
-                        }}>
-
-                            <button className="px-4 py-1.5 rounded-xl bg-white" type="submit">
-                                <span className="text-black font-[550]">Log In</span>
-                            </button>
-                        </form> */}
                     </div>                   
                     </>
                    
