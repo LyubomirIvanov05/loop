@@ -1,6 +1,6 @@
 // import LogIn from "LogIn";
 import {  signIn } from "@/auth";
-import { faGoogle, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGoogle, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -40,11 +40,11 @@ export default async function LogIn() {
                 <form action={async () => {
                         "use server";
 
-                        await signIn('google', {redirectTo: '/home'});
+                        await signIn('facebook', {redirectTo: '/home'});
                         }}>
                             <input type="hidden" name="redirectTo" value="../" />
                             <button className="px-3 py-1.5 rounded-xl bg-white flex" type="submit">
-                                <FontAwesomeIcon icon={faInstagram} className="text-black text-2xl"/>
+                                <FontAwesomeIcon icon={faFacebook} className="text-black text-2xl"/>
                             </button>
                 </form> 
             </div>
